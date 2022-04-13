@@ -52,7 +52,10 @@ public class addRemoveElement {
     @When("delete should disappear after the click")
     public void delete_should_disappear_after_the_click() {
 
-        Assert.assertTrue(!addRemoveElementsPage.deleteButton.isDisplayed());
+        String actualDeleteText = addRemoveElementsPage.deleteButton.getText();
+        String expectedDeleteText = "Delete";
+
+        Assert.assertEquals(actualDeleteText, expectedDeleteText);
 
     }
 }
