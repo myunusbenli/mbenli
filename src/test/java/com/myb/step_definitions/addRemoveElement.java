@@ -55,6 +55,7 @@ public class addRemoveElement {
         String actualDeleteText = addRemoveElementsPage.deleteButton.getText();
         String expectedDeleteText = "Delete";
 
+        //this needs to be fixed
         Assert.assertEquals(actualDeleteText, expectedDeleteText);
 
     }
